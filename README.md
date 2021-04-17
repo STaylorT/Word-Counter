@@ -1,6 +1,7 @@
 # Word-Counter
-Your program should be called wordCount. It should accept the text file from standard input. The output must obey the following specifications. Output both lists to standard output, with a single blank line between the lists, and no other information (such as headings). Each line holds a single word and its count, separated by a single space.
+# Author: Taylor Thomas
+This program takes in a file, reads words in, counts the number of occurrences for each word, then outputs the words and their # of occurrences.
 
-You must use a hash table to store the counts. You may use any hash function and any collision-resolution scheme you wish.
+Takes text file from standard input, parses words (removing unwanted punctuation) individually, then places each unique word (key) into a hash table. when keys match, the value associated is incremented.
 
-You must write your own sorting algorithm to sort the output and your own hash-table routines. (You may not use any library routines for sorting or hashing.) You will lose 2 points if you use selection sort or insertion sort; you will get full credit for heapsort, merge sort, or quicksort. You may not use any other sorting method.
+After being inserted, the array of hash elements is sorted via quickSort partition method. one quickSort sorts the hashtable by key, lexigraphically; the other sorts by value, highest to lowest number.
